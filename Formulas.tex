@@ -350,6 +350,12 @@ $i\hbar \frac{\partial \psi}{\partial t} = H\psi$
 Momentum operator:
 $\hat{p} = -i\hbar \frac{\partial}{\partial x}$
 
+$[x,p] = i\hbar$
+
+$[x_i, F(p)] = i \hbar \frac{\partial F(p)}{\partial p_i}$
+
+$[p_i, G(x)] = -i \hbar \frac{\partial G(x)}{\partial x_i}$
+
 \section*{Harmonic Oscillator}
 $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}k\hat{x}^2 = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2$
 
@@ -387,7 +393,9 @@ $\hat{H}_s = -\vec{\mu} \cdot \vec{B} = -\gamma \vec{S} \cdot \vec{B}$
 Dipole moment of spin particle:
 $\vec{\mu} = \gamma\vec{S} = \frac{gq}{2m}\vec{S}$
 
-$S_j = \frac{\hbar}{s} \sigma_j$
+$\vec{n} \cdot \vec{S} \ket{\lambda} = \frac{\hbar}{2}\lambda\ket{\lambda}$
+
+$S_j = \frac{\hbar}{2} \sigma_j$
 
 $\sigma_x = 
 \begin{pmatrix}
@@ -405,6 +413,19 @@ $\sigma_z =
 0 & -1
 \end{pmatrix}$
 
+$\ket{\frac{1}{2}, \frac{1}{2}} = 
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}$
+$\ket{\frac{1}{2}, -\frac{1}{2}} = 
+\begin{pmatrix}
+0 \\
+1
+\end{pmatrix}$
+
+$|\bra{\frac{1}{2}, \frac{1}{2}}\ket{\psi}|^2=$ probability of measuring $\frac{1}{2}$ for particle in state $\psi$ 
+
 $\sigma_j^2 = \hat{I}$
 
 $\{\sigma_j,\sigma_k\} = 2\hat{I}\delta_{j,k}$
@@ -414,6 +435,8 @@ $[\hat{S}_x, \hat{S}_y] = i\hbar\hat{S}_z$
 $[\hat{S}_y, \hat{S}_z] = i\hbar\hat{S}_x$
 
 $[\hat{S}_z, \hat{S}_x] = i\hbar\hat{S}_y$
+
+$[S^2, S_x] = [S^2, S_y] = [S^2, S_z] = 0$
 
 $\hat{S}^2\ket{s, m_s} = \hbar^2 s(s+1)\ket{s, m_s}$
 
@@ -428,7 +451,21 @@ $\hat{S}_y = \frac{1}{2i} (\hat{S}_+ - \hat{S}_-)$
 $\braket{\hat{S}_x^2} = \braket{\hat{S}_y^2} = \frac{1}{2}(\braket{\hat{S}^2} - \braket{\hat{S}_z^2}) = \frac{\hbar^2}{2}[s(s+1)-m_s^2]$
 
 \section*{Angular Momentum}
-$L_z\ket{\psi} = \hbar m \ket{\psi}$
+$L_z\ket{\ell, m} = \hbar m \ket{\ell, m}$
+
+$L^2\ket{\ell, m} = \hbar^2 \ell(\ell+1)\ket{\ell, m}$ 
+
+$L^2 = L_x^2 + L_y^2 + L_z^2$
+
+$[L^2, L_x] = [L^2, L_y] = [L^2, L_z] = 0$
+
+$J = L + S$
+
+$[J^2, J_x] = [J^2, J_y] = [J^2, J_z] = 0$
+
+$J_+ = J_x + iJ_y$
+
+$J_- = J_x - iJ_y$
 
 \section*{Perturbation Theory}
 
@@ -453,6 +490,23 @@ $\omega_{fj} = \frac{E_f - E_j}{\hbar}$
 Energy levels:
 $E_n = -\frac{13.6 eV}{n^2} = -\frac{1 Ry}{n^2}$
 
+$\psi_{n,\ell,m} = R_{n,\ell}(r) Y_{\ell,m}(\theta,\phi)$
+
+$\braket{r} = \int_0^{\infty} r P(r) dr$
+
+$P(r) = r^2 |R_{n,\ell}(r)|^2$
+
+$\bra{n,\ell}r\ket{n,\ell} = \frac{1}{2}[3n^2 - \ell(\ell+1)]a_{\circ}$
+
+$\bra{n,\ell}r^2\ket{n,\ell} = \frac{1}{2}n^2[5n^2 + 1 - 3\ell(\ell+1)]a_{\circ}^2$
+
+$\bra{n,\ell}r^{-1}\ket{n,\ell} = \frac{1}{n^2a_{\circ}}$
+
+$\bra{n,\ell}r^{-2}\ket{n,\ell} = \frac{2}{n^3(2\ell + 1)a_{\circ}^2}$
+
+Bhor radius:
+$a_{\circ} = \frac{4\pi \epsilon_{circ}\hbar^2}{m_e e^2}$
+
 \section*{General Solutions}
 
 Square Well Wave-function:
@@ -473,8 +527,12 @@ $E_k = -\frac{\hbar^2 k^2}{2m}$
 
 \section*{Concepts}
 
+$\Delta \hat{A} = \sqrt{\braket{\hat{A}^2} - \braket{\hat{A}}^2}$
+
 $\hat{H}$ for E-field:
 $\hat{H} = qE$
+
+\textbf{Variational Method:} (1) Normalize trial wavefunction, (2) solve $\bra{\psi}\hat{H}\ket{\psi}$ via integration, (3) minimize energy
 
 Expectation value or $\hat{A}$:
 $\bra{\psi}\hat{A}\ket{\psi} = \int \psi^* \hat{A} \psi d^3r$
@@ -484,6 +542,8 @@ $\implies \psi^* \psi$ is symmetric
 
 Expectation value of anti-symmetric operator with symmetric states:
 $\bra{\psi}\hat{A}\ket{\psi} = 0$
+
+Wave function is continuous and first derivative is continuous on boundaries
 
 \hrule
 %\newpage
