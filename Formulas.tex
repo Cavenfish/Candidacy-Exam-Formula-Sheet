@@ -349,38 +349,53 @@ $i\hbar \frac{\partial \psi}{\partial t} = H\psi$
 
 Momentum operator:
 $\hat{p} = -i\hbar \frac{\partial}{\partial x}$
-
+\hspace*{1cm}
 $[x,p] = i\hbar$
 
 $[x_i, F(p)] = i \hbar \frac{\partial F(p)}{\partial p_i}$
-
+\hspace*{1cm}
 $[p_i, G(x)] = -i \hbar \frac{\partial G(x)}{\partial x_i}$
+
+Heisenberg picture:
+$\frac{d}{dt} \hat{A}(t) = \frac{i}{\hbar}[\hat{H}, \hat{A}(t)] + \frac{\partial \hat{A}}{\partial t}$
+
+Probability (particle) current:
+$j = \frac{\hbar}{2mi} (\psi^* \nabla\psi + \psi\nabla\psi^*)$
+
+Uncertainty principal:
+$\Delta \hat{x} \Delta \hat{p} \geq \frac{\hbar}{2}$
 
 \section*{Harmonic Oscillator}
 $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}k\hat{x}^2 = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2$
-
+\hspace*{1cm}
 $E_n = \hbar \omega (n + \frac{1}{2})$
 
 $a = \sqrt{\frac{m\omega}{2\hbar}}(\hat{x} + \frac{i}{m\omega}\hat{p}$
-
+\hspace*{1cm}
 $a^{\dagger} = \sqrt{\frac{m\omega}{2\hbar}}(\hat{x} - \frac{i}{m\omega}\hat{p}$
 
 $\hat{x} = \sqrt{\frac{\hbar}{2m\omega}}(a^{\dagger} + a)$
-
+\hspace*{1cm}
 $\hat{p} = i\sqrt{\frac{\hbar m\omega}{2}}(a^{\dagger} - a)$
 
-$a^{\dagger}\ket{n} = \sqrt{n+1}\ket{n+1}$
+$(\Delta \hat{x})^2 = \frac{\hbar}{m\omega} (n + \frac{1}{2})$
+\hspace*{1cm}
+$(\Delta \hat{p})^2 = \hbar m\omega (n + \frac{1}{2})$
 
+$a^{\dagger}\ket{n} = \sqrt{n+1}\ket{n+1}$
+\hspace*{1cm}
 $a\ket{n} = \sqrt{n}\ket{n-1}$
 
 $N = a^{\dagger}a \implies N\ket{n} = n\ket{n}$
 
-$\bra{n}\hat{x}\ket{n} = 0$ same for $\hat{p}$
+$\bra{n}\hat{x}\ket{n} = 0$ 
+\hspace*{1cm}
+$\bra{n}\hat{p}\ket{n} = 0$
 
 $\bra{n}\hat{x}\ket{n+1} = \bra{n+1}\hat{x}\ket{n} = \sqrt{\frac{\hbar(n+1)}{2m\omega}}$
 
 $[a,a^{\dagger}]=1$
-
+\hspace*{1cm}
 $[\hat{H},a^{\dagger}] = \hbar\omega a^{\dagger}$
 
 \section*{Spin}
@@ -394,7 +409,7 @@ Dipole moment of spin particle:
 $\vec{\mu} = \gamma\vec{S} = \frac{gq}{2m}\vec{S}$
 
 $\vec{n} \cdot \vec{S} \ket{\lambda} = \frac{\hbar}{2}\lambda\ket{\lambda}$
-
+\hspace*{1cm}
 $S_j = \frac{\hbar}{2} \sigma_j$
 
 $\sigma_x = 
@@ -418,24 +433,25 @@ $\ket{\frac{1}{2}, \frac{1}{2}} =
 1 \\
 0
 \end{pmatrix}$
+\hspace*{1cm}
 $\ket{\frac{1}{2}, -\frac{1}{2}} = 
 \begin{pmatrix}
 0 \\
 1
 \end{pmatrix}$
 
-$|\bra{\frac{1}{2}, \frac{1}{2}}\ket{\psi}|^2=$ probability of measuring $\frac{1}{2}$ for particle in state $\psi$ 
+$|\bra{\frac{1}{2}, \frac{1}{2}}\ket{\psi}|^2=$ probability of measuring $\frac{1}{2}$ in state $\psi$ 
 
 $\sigma_j^2 = \hat{I}$
-
+\hspace*{1cm}
 $\{\sigma_j,\sigma_k\} = 2\hat{I}\delta_{j,k}$
 
 $[\hat{S}_x, \hat{S}_y] = i\hbar\hat{S}_z$
-
+\hspace*{1cm}
 $[\hat{S}_y, \hat{S}_z] = i\hbar\hat{S}_x$
 
 $[\hat{S}_z, \hat{S}_x] = i\hbar\hat{S}_y$
-
+\hspace*{1cm}
 $[S^2, S_x] = [S^2, S_y] = [S^2, S_z] = 0$
 
 $\hat{S}^2\ket{s, m_s} = \hbar^2 s(s+1)\ket{s, m_s}$
@@ -445,27 +461,62 @@ $\hat{S}_z\ket{s, m_s} = \hbar m_s\ket{s, m_s}$
 $\hat{S}_{\pm} \ket{s, m_s} = \hbar \sqrt{s(s+1)- m_s(m_s \pm 1)}\ket{s, m_s \pm 1}$
 
 $\hat{S}_x = \frac{1}{2} (\hat{S}_+ + \hat{S}_-)$
-
+\hspace*{1cm}
 $\hat{S}_y = \frac{1}{2i} (\hat{S}_+ - \hat{S}_-)$
 
 $\braket{\hat{S}_x^2} = \braket{\hat{S}_y^2} = \frac{1}{2}(\braket{\hat{S}^2} - \braket{\hat{S}_z^2}) = \frac{\hbar^2}{2}[s(s+1)-m_s^2]$
 
 \section*{Angular Momentum}
 $L_z\ket{\ell, m} = \hbar m \ket{\ell, m}$
-
+\hspace*{1cm}
 $L^2\ket{\ell, m} = \hbar^2 \ell(\ell+1)\ket{\ell, m}$ 
 
 $L^2 = L_x^2 + L_y^2 + L_z^2$
+\hspace*{1cm}
+$J = L + S$
+
+$[\hat{L}_x, \hat{L}_y] = i\hbar\hat{L}_z$
+\hspace*{0.5cm}
+$[\hat{L}_y, \hat{L}_z] = i\hbar\hat{L}_x$
+\hspace*{0.5cm}
+$[\hat{L}_z, \hat{L}_x] = i\hbar\hat{L}_y$
 
 $[L^2, L_x] = [L^2, L_y] = [L^2, L_z] = 0$
-
-$J = L + S$
 
 $[J^2, J_x] = [J^2, J_y] = [J^2, J_z] = 0$
 
 $J_+ = J_x + iJ_y$
-
+\hspace*{1cm}
 $J_- = J_x - iJ_y$
+\hspace*{1cm}
+$\braket{J_x} = \braket{J_y} = 0$
+
+$J_z\ket{j, m} = \hbar m \ket{j, m}$
+\hspace*{1cm}
+$J^2\ket{j, m} = \hbar^2 j(j+1)\ket{j, m}$ 
+
+$J_{\pm} \ket{j, m} = \hbar \sqrt{(j\mp m)(j \pm m + 1)}\ket{j, m\pm1}$
+
+$[\hat{J}_x, \hat{J}_y] = i\hbar\hat{J}_z$
+\hspace*{0.5cm}
+$[\hat{J}_y, \hat{J}_z] = i\hbar\hat{J}_x$
+\hspace*{0.5cm}
+$[\hat{J}_z, \hat{J}_x] = i\hbar\hat{J}_y$
+
+\section*{WKB Approximation}
+
+$\int p(x,E_n) dx = \chi$
+
+$p(x,E_n) = \sqrt{2m(E_n - V(x))}$
+
+For 0 rigid walls:
+$\chi = \hbar(n + \frac{1}{2})$
+
+For 1 rigid wall:
+$\chi = \pi \hbar (n + \frac{3}{4})$
+
+For 2 rigid walls:
+$\chi = n\pi \hbar$
 
 \section*{Perturbation Theory}
 
@@ -473,7 +524,7 @@ Perturbed Hamiltonian:
 $\hat{H} = \hat{H}_0 + \hat{H}_p$
 
 First order energy correction:
-$E_n^{(1)} = \bra{n^{(0)}}\hat{H}_p\ket{n^{(0)}}$
+$E_n^{(1)} = \bra{\psi_n^{(0)}}\hat{H}_p\ket{\psi_n^{(0)}}$
 
 Second order energy correction:
 $E_n^{(2)} = \sum_{m\neq n } \frac{|\bra{m}\hat{H_p}\ket{n}|^2}{E_n^{(0)} - E_m^{(0)}}$
@@ -493,7 +544,7 @@ $E_n = -\frac{13.6 eV}{n^2} = -\frac{1 Ry}{n^2}$
 $\psi_{n,\ell,m} = R_{n,\ell}(r) Y_{\ell,m}(\theta,\phi)$
 
 $\braket{r} = \int_0^{\infty} r P(r) dr$
-
+\hspace*{1cm}
 $P(r) = r^2 |R_{n,\ell}(r)|^2$
 
 $\bra{n,\ell}r\ket{n,\ell} = \frac{1}{2}[3n^2 - \ell(\ell+1)]a_{\circ}$
@@ -503,9 +554,9 @@ $\bra{n,\ell}r^2\ket{n,\ell} = \frac{1}{2}n^2[5n^2 + 1 - 3\ell(\ell+1)]a_{\circ}
 $\bra{n,\ell}r^{-1}\ket{n,\ell} = \frac{1}{n^2a_{\circ}}$
 
 $\bra{n,\ell}r^{-2}\ket{n,\ell} = \frac{2}{n^3(2\ell + 1)a_{\circ}^2}$
-
+\hspace*{0.8cm}
 Bhor radius:
-$a_{\circ} = \frac{4\pi \epsilon_{circ}\hbar^2}{m_e e^2}$
+$a_{\circ} = \frac{4\pi \epsilon_{\circ}\hbar^2}{m_e e^2}$
 
 \section*{General Solutions}
 
@@ -525,12 +576,24 @@ Be^{-kx} & Right
 Dirac-potential Energy Levels:
 $E_k = -\frac{\hbar^2 k^2}{2m}$
 
+\section*{Born Approximation}
+
+Differential scattering cross-section:
+$d\sigma = \frac{\mu^2}{4\pi^2 \hbar^4}|\int e^{i\vec{q}\cdot\vec{r}} V(r) d^3r| d\Omega$
+
+Total scattering cross-section:
+$\sigma = \int d\sigma$
+
 \section*{Concepts}
 
+Uncertainty of $\hat{A}$:
 $\Delta \hat{A} = \sqrt{\braket{\hat{A}^2} - \braket{\hat{A}}^2}$
 
 $\hat{H}$ for E-field:
 $\hat{H} = qE$
+
+Probability distribution:
+$P = |\psi|^2$
 
 \textbf{Variational Method:} (1) Normalize trial wavefunction, (2) solve $\bra{\psi}\hat{H}\ket{\psi}$ via integration, (3) minimize energy
 
@@ -545,6 +608,8 @@ $\bra{\psi}\hat{A}\ket{\psi} = 0$
 
 Wave function is continuous and first derivative is continuous on boundaries
 
+Heisenberg picture has time dependent operators, Schrodinger picture has time dependent states.
+
 \hrule
 %\newpage
 
@@ -552,6 +617,24 @@ Wave function is continuous and first derivative is continuous on boundaries
      \Large{\textbf{Classical Mechanics}} \\
      \hrule
 \end{center}
+
+Center of Mass (sum):
+$x_{cm} = \frac{\sum_i m_ix_i}{M_{sum}}$
+
+Center of Mass (integral):
+$x_cm = \frac{1}{M_{sum}} \int x dm$
+
+Reduced Mass:
+$\mu = \frac{m_1 m_2}{m_1 + m_2}$
+
+Gravitational potential energy:
+$V = mgh$
+
+Spring potential energy:
+$V = \frac{1}{2}kx^2$.
+
+Spring force:
+$F = -kx$
 
 \section*{Linear Motion}
 
@@ -642,22 +725,7 @@ $\omega = \sqrt{\frac{g}{\ell}}$
 
 Conservation of Angular Momentum: No external torque is acting on the system
 
-\section*{Moments of Inertia}
 
-\subsection*{Through Center}
-
-Solid Sphere:
-$\frac{2}{5}MR^2$
-
-Spherical Shell:
-$\frac{2}{3}MR^2$
-
-Wheel/Ring:
-$MR^2$
-
-Cylinder:
-$\frac{1}{2}MR^2$
-
-\newpage
+%\newpage
 \end{multicols}
 \end{document}
